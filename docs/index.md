@@ -1,17 +1,11 @@
-# Welcome to MkDocs
+# Segurança no desenvolvimento web
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Aplicações web desempenham um papel fundamental em muitos aspectos do cotidiano além de ambientes de trabalho. Presentes em plataformas de comércio eletrônico ou sistemas de gerenciamento de dados, sites de notícias ou redes sociais, as aplicações web tornaram-se parte integrante de muitos setores. Entretanto, mesmo que esses ambientes ofereçam benefícios, as aplicações web também apresentam desafios significativos em termos de segurança.
 
-## Commands
+A crescente interconexão e acessibilidade dessas aplicações via internet levantam preocupações em questões de segurança. Dada a natureza das aplicações web, que coletam, processam e armazenam dados sensíveis dos usuários, elas se tornam alvos atrativos para potenciais ataques. Questões relacionadas à privacidade e segurança cibernética são, portanto, temas críticos a serem abordados no desenvolvimento e na manutenção de aplicações web.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+# Objetivo
 
-## Project layout
+O objetivo deste guia é servir como uma espécie de dicionário, onde é possível identificar um problema e encontrar descrições práticas de segurança relacionadas ao problema. Este documento pode ter utilidade para quaisquer indivíduos direta ou indiretamente ligados à produção de aplicações web, principalmente àqueles que possuem foco em segurança dessas aplicações.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+O uso deste guia não exige que seja seguida uma ordem, onde, assim como um dicionário, caso queira ler a respeito de um problema específico, basta ir até a seção correspondente e esta seção trará toda informação necessária reunida neste trabalho. Contudo, para aqueles que tiverem interesse em ter noções acerca de vários tipos de problemas que acometem o universo do desenvolvimento web, a leitura completa do guia também é de grande valia.
