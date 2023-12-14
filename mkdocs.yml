@@ -1,1 +1,21 @@
-site_name: My Docs
+site_name: Guia de Medidas de Segurança
+
+repo_name: "Guia_Medidas_Seguranca"
+repo_url: "https://github.com/AlvaroLeles/Guia_Medidas_Seguranca"
+
+theme:
+  name: material
+  language: "pt"
+  icon:
+    logo: material/server-security
+    repo: fontawesome/brands/github
+  palette:
+    primary: "green"
+    accent: "blue"
+  font:
+    text: "Montserrat"
+    code: "sans-serif"
+
+nav:
+  - Introdução: index.md
+  - Referencial: referencial.md
