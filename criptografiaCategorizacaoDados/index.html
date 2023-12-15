@@ -244,10 +244,85 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Criptografia e Categorização de Dados
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Criptografia e Categorização de Dados
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dados-em-repouso" class="md-nav__link">
+    Dados em Repouso
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dados-em-movimento" class="md-nav__link">
+    Dados em Movimento
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dados-em-uso" class="md-nav__link">
+    Dados em Uso
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../malwares/" class="md-nav__link">
+        Malwares
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../falhasAdministracaoUsoSistemas/" class="md-nav__link">
+        Falhas na Administração e Uso de Sistemas
+      </a>
     </li>
   
 
@@ -272,6 +347,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dados-em-repouso" class="md-nav__link">
+    Dados em Repouso
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dados-em-movimento" class="md-nav__link">
+    Dados em Movimento
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dados-em-uso" class="md-nav__link">
+    Dados em Uso
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -290,6 +394,14 @@
 <h1 id="criptografia-e-categorizacao-de-dados">Criptografia e Categorização de Dados</h1>
 <p>Dados podem estar em alguns estados, e cada estado apresenta características e cuidados diferentes. Podem estar em repouso, armazenados em algum local, em movimento, transmitidos pela rede, ou em uso, na memória de um dispositivo, e a confidencialidade de dados considerados sensíveis deve ser protegida em qualquer um desses estados.</p>
 <p>O objetivo desta seção é apresentar conceitos sobre a disposição de dados sensíveis em diferentes estados. Para obter informações mais técnicas sobre criptografia, recomenda-se pesquisar e estudar algorítimos de criptografia em materiais bibliográficos ou em centros de recomendações focados na segurança de dados sensíveis, como a OWASP.</p>
+<h2 id="dados-em-repouso">Dados em Repouso</h2>
+<p>Em incidentes onde dispositivos são perdidos ou roubados, caso os dados armazenados não estejam criptografados, têm-se uma violação de dados. A criptografia de dados armazenados pode ser feita pelo sistema operacional ou pelo próprio disco rígido, criptografando os dados no disco com uma chave de criptografia que não deve ser armazenada de forma clara no dispositivo. Sistemas operacionais modernos oferecem algum tipo de criptografia em nível de armazenamento e ativar essa funcionalidade de criptografia evita que incidentes de perda ou roubo de dispositivos se tornem violações de dados.</p>
+<p>Quando a criptografia é usada como uma ferramenta para proteger a confidencialidade dos dados, é de extrema importância escolher o local ideal onde armazenar as chaves de criptografia e decidir quais pessoas terão acesso a elas. Embora sejam mais incomuns, ataques que roubam fisicamente um dispositivo que armazena dados sensíveis ainda existem, portanto, ao utilizar dispositivos que contenham informações sensíveis, é necessário cuidar para que os dados estejam criptografados a nível de disco rígido.</p>
+<h2 id="dados-em-movimento">Dados em Movimento</h2>
+<p>No momento que que os dados sensíveis estão sendo trafegados de um dispositivo para outro através da rede, é necessário garantir que esses dados não podem ser capturados por agentes externos a essa comunicação. Para isso, pode-se criptografar os dados com uma chave que é conhecida apenas pelas extremidades da comunicação. Os dados são então criptografados antes da transmissão pela rede e só são descriptografados ao serem recebidos pelo interessado legítimo.</p>
+<p>Muitos são os protocolos que podem ser utilizados para garantir a integridade dos dados durante o tráfego, mas um dos mais utilizados pelos navegadores e servidores da web é o TLS. Após estabelecer uma conexão de rede, o TLS utiliza uma chave pública que combina com a chave privada conhecida apenas pelas extremidades da comunicação, para criptografar o tráfego de dados nesse canal.</p>
+<h2 id="dados-em-uso">Dados em Uso</h2>
+<p>Por fim, é necessário garantir a segurança de dados sensíveis também quando estão em uso. Para isso, recomenda-se não descriptografar dados sensíveis na memória padrão do dispositivo, mas sim deixar para processar esses dados criptografados em um enclave seguro, que é uma região protegida da memória do dispositivo, que apresenta um ambiente de execução confiável, com sua própria CPU e memórias dedicadas. A memória nesse ambiente e os registradores do processador usados no enclave seguro são criptografados com chaves que são inacessíveis fora desse ambiente.</p>
 
               
             </article>
@@ -317,6 +429,21 @@
           </div>
         </a>
       
+      
+        
+        <a href="../malwares/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Malwares" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              Malwares
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
