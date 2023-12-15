@@ -19,3 +19,4 @@ theme:
 nav:
   - Introdução: index.md
   - Referencial: referencial.md
+  - Criptografia e Categorização de Dados: criptografiaCategorizacaoDados.md
