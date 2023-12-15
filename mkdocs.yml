@@ -20,3 +20,5 @@ nav:
   - Introdução: index.md
   - Referencial: referencial.md
   - Criptografia e Categorização de Dados: criptografiaCategorizacaoDados.md
+  - Malwares: malwares.md
+  - Falhas na Administração e Uso de Sistemas: falhasAdministracaoUsoSistemas.md

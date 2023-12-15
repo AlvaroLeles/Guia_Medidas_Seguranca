@@ -1,0 +1,7 @@
+# Falhas na Administração e Uso de Sistemas
+
+Este tópico possui ligação com outros como phishing ou vulnerabilidades no desenvolvimento de softwares pois aborda falhas que um integrante de uma organização pode cometer enquanto desenvolve ou usa um sistema. Logo, muitas das tecnologias discutidas em outras seções deste guia também ajudarão a evitar erros relacionados aos integrantes de uma organização.
+
+Treinar todos os funcionários e parceiros de uma organização em conscientização de segurança é uma prática muito importante para evitar erros de administração ou uso de um sistema. Esse tipo de treinamento aumenta o envolvimento dos envolvidos com a empresa, além de capacitá-los em habilidades como identificar e evitar ataques de engenharia social aos quais são constantemente expostos.
+
+Além de treinar os funcionários, a organização pode também fazer uso de ferramentas de prevenção de perda de dados, que são ferramentas que detectam quando informações sensíveis possivelmente estão sendo enviadas para destinatários externos à empresa. Além de detectar, essas ferramentas também bloqueiam essa saída de dados, então, se por exemplo, um funcionário acidentalmente enviar um e-mail com informações anexadas referentes aos salários dos funcionários da empresa para um destinatário que não está identificado como parte da organização, a ferramenta identifica que o e-mail para qual o arquivo está sendo enviado não faz parte da empresa e bloqueia esse envio, evitando uma exposição de dados sensíveis.
