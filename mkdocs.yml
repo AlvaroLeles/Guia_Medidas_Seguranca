@@ -10,7 +10,7 @@ theme:
     logo: material/server-security
     repo: fontawesome/brands/github
   palette:
-    primary: "green"
+    primary: "blue grey"
     accent: "blue"
   font:
     text: "Montserrat"
