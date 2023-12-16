@@ -1,0 +1,806 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.9">
+    
+    
+      
+        <title>Phishing - Guia de Medidas de Segurança</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2b4465f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4cae4f">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700%7Csans-serif&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"sans-serif"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="blue">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#phishing" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="Guia de Medidas de Segurança" class="md-header__button md-logo" aria-label="Guia de Medidas de Segurança" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 1h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1m0 8h16a1 1 0 0 1 1 1v.67l-2.5-1.11-6.5 2.88V15H3a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1m0 8h8c.06 2.25 1 4.4 2.46 6H3a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1M8 5h1V3H8v2m0 8h1v-2H8v2m0 8h1v-2H8v2M4 3v2h2V3H4m0 8v2h2v-2H4m0 8v2h2v-2H4m13.5-7 4.5 2v3c0 2.78-1.92 5.37-4.5 6-2.58-.63-4.5-3.22-4.5-6v-3l4.5-2m0 1.94L15 15.06v2.66c0 1.54 1.07 2.98 2.5 3.34v-7.12z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guia de Medidas de Segurança
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Phishing
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Limpar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/AlvaroLeles/Guia_Medidas_Seguranca/" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Guia_Medidas_Seguranca
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Guia de Medidas de Segurança" class="md-nav__button md-logo" aria-label="Guia de Medidas de Segurança" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 1h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1m0 8h16a1 1 0 0 1 1 1v.67l-2.5-1.11-6.5 2.88V15H3a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1m0 8h8c.06 2.25 1 4.4 2.46 6H3a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1M8 5h1V3H8v2m0 8h1v-2H8v2m0 8h1v-2H8v2M4 3v2h2V3H4m0 8v2h2v-2H4m0 8v2h2v-2H4m13.5-7 4.5 2v3c0 2.78-1.92 5.37-4.5 6-2.58-.63-4.5-3.22-4.5-6v-3l4.5-2m0 1.94L15 15.06v2.66c0 1.54 1.07 2.98 2.5 3.34v-7.12z"/></svg>
+
+    </a>
+    Guia de Medidas de Segurança
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/AlvaroLeles/Guia_Medidas_Seguranca/" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Guia_Medidas_Seguranca
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Introdução
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../referencial/" class="md-nav__link">
+        Referencial
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../criptografiaCategorizacaoDados/" class="md-nav__link">
+        Criptografia e Categorização de Dados
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../malwares/" class="md-nav__link">
+        Malwares
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../falhasAdministracaoUsoSistemas/" class="md-nav__link">
+        Falhas na Administração e Uso de Sistemas
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Phishing
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Phishing
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#autenticacao-de-dois-fatores" class="md-nav__link">
+    Autenticação de Dois Fatores
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chaves-de-seguranca" class="md-nav__link">
+    Chaves de Segurança
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tokens-otp-dedicados" class="md-nav__link">
+    Tokens OTP Dedicados
+  </a>
+  
+    <nav class="md-nav" aria-label="Tokens OTP Dedicados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#autenticacao-de-dois-fatores-em-aplicativos-moveis" class="md-nav__link">
+    Autenticação de Dois Fatores em Aplicativos Móveis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otp-baseado-em-sms" class="md-nav__link">
+    OTP Baseado em SMS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otp-baseado-em-e-mail" class="md-nav__link">
+    OTP Baseado em E-mail
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autenticacao-de-multiplos-fatores" class="md-nav__link">
+    Autenticação de Múltiplos Fatores
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proteger-os-dominios-com-spf-dkim-e-dmarc" class="md-nav__link">
+    Proteger os Domínios com SPF, DKIM e DMARC
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dominios-parecidos" class="md-nav__link">
+    Domínios Parecidos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preenchimento-de-credenciais-e-controle-de-conta" class="md-nav__link">
+    Preenchimento de Credenciais e Controle de Conta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gerenciadores-de-senhas" class="md-nav__link">
+    Gerenciadores de Senhas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defesas-adicionais" class="md-nav__link">
+    Defesas Adicionais
+  </a>
+  
+    <nav class="md-nav" aria-label="Defesas Adicionais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#treinamento-e-testes" class="md-nav__link">
+    Treinamento e Testes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verificacoes-de-complexidade-de-senha" class="md-nav__link">
+    Verificações de Complexidade de Senha
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotacao-de-senhas" class="md-nav__link">
+    Rotação de Senhas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ferramentasTerceiros/" class="md-nav__link">
+        Ferramentas de Terceiros
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../centralizacaoRede/" class="md-nav__link">
+        Centralização de Rede
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vulnerabilidadesSoftware/" class="md-nav__link">
+        Vulnerabilidades de Software
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../consideracoesFinais/" class="md-nav__link">
+        Considerações Finais
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#autenticacao-de-dois-fatores" class="md-nav__link">
+    Autenticação de Dois Fatores
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chaves-de-seguranca" class="md-nav__link">
+    Chaves de Segurança
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tokens-otp-dedicados" class="md-nav__link">
+    Tokens OTP Dedicados
+  </a>
+  
+    <nav class="md-nav" aria-label="Tokens OTP Dedicados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#autenticacao-de-dois-fatores-em-aplicativos-moveis" class="md-nav__link">
+    Autenticação de Dois Fatores em Aplicativos Móveis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otp-baseado-em-sms" class="md-nav__link">
+    OTP Baseado em SMS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otp-baseado-em-e-mail" class="md-nav__link">
+    OTP Baseado em E-mail
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autenticacao-de-multiplos-fatores" class="md-nav__link">
+    Autenticação de Múltiplos Fatores
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proteger-os-dominios-com-spf-dkim-e-dmarc" class="md-nav__link">
+    Proteger os Domínios com SPF, DKIM e DMARC
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dominios-parecidos" class="md-nav__link">
+    Domínios Parecidos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preenchimento-de-credenciais-e-controle-de-conta" class="md-nav__link">
+    Preenchimento de Credenciais e Controle de Conta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gerenciadores-de-senhas" class="md-nav__link">
+    Gerenciadores de Senhas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defesas-adicionais" class="md-nav__link">
+    Defesas Adicionais
+  </a>
+  
+    <nav class="md-nav" aria-label="Defesas Adicionais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#treinamento-e-testes" class="md-nav__link">
+    Treinamento e Testes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verificacoes-de-complexidade-de-senha" class="md-nav__link">
+    Verificações de Complexidade de Senha
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotacao-de-senhas" class="md-nav__link">
+    Rotação de Senhas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+<a href="https://github.com/AlvaroLeles/Guia_Medidas_Seguranca/edit/master/docs/phishing.md" title="Editar esta página" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+<h1 id="phishing">Phishing</h1>
+<p>Ataques de phishing fazem parte da internet desde os anos 90. Quando começou, era possível criar ataques de phishing com facilidade, pois o SMTP (Simple Mail Transfer Protocol, ou Protocolo Simples de Transferência de Correio), utilizado para enviar e receber e-mails, não autenticava o remetente do e-mail. Sendo assim, qualquer pessoa podia mandar um e-mail para qualquer outra, alegando ser quem quisesse e afirmando ser de qualquer organização que quisesse, possibilitando que impostores executasse ataques de phishing.</p>
+<p>Em um ataque de phishing bem-sucedido, a vítima confia no e-mail recebido pois acredita que a identidade do suposto remetente na seção "De:" do e-mail está correta. Além disso, a vítima, confiando na veracidade do e-mail, clica em um link que redireciona para um formulário de login em um site falso e inadvertidamente entrega sua senha ao atacante.</p>
+<p>A partir disso, a primeira recomendação contra esse tipo de ataque é implementar autenticação de dois fatores ao invés de contar apenas com a senha, fazendo com que seja necessário não apenas saber algo (a senha), mas também ter algo (chave de segurança ou um dispositivo móvel) ou ser algo (utilizando biometria).</p>
+<h2 id="autenticacao-de-dois-fatores">Autenticação de Dois Fatores</h2>
+<p>As principais razões que impulsionam a necessidade de se usar autenticação de dois fatores são as muitas violações que geram mais credenciais comprometidas, alimentando o conjunto de dados roubados dos atacantes, o que fortalece as próximas tentativas de invadir uma organização. Soma-se a isso o fato de que clientes e funcionários geralmente não escolhem senhas fortes.</p>
+<p>Toda organização poderia fazer uso de autenticação de dois fatores com certa facilidade, visto que estão disponíveis no mercado várias opções para tipos de projetos diferentes, como o Microsoft Office 365 e o Slack para ferramentas de produtividade e colaboração, AWS e Azure para serviços em nuvem e o GitHub para repositórios de código-fonte.</p>
+<p>Habilitar autenticação de dois fatores utilizando os dispositivos móveis de seus funcionários é recomendável já que a maioria dos funcionários possuem esses dispositivos. Independentemente das prioridades de uma organização, a defesa contra ataques de phishing pode ser rapidamente aprimorada ao habilitar autenticação de dois fatores por meio de aplicativos autenticadores de dispositivos móveis que podem ser baixados na maioria dos celulares.</p>
+<h2 id="chaves-de-seguranca">Chaves de Segurança</h2>
+<p>Um dos fatores secundários de autenticação mais bem avaliados até o momento para eliminar ameaças de phishing é o uso de chaves de segurança em hardware.</p>
+<p>Similar a um motorista que insere uma chave para ligar um carro, os funcionários utilizam uma chave de segurança em seu ambiente de trabalho (laptops, desktops, celulares) para poderem fazer login em sites e aplicativos da organização. Uma chave de segurança é geralmente um token, similar a um pendrive, que autentica um funcionário apenas quando está conectado e o funcionário toca na chave.</p>
+<p>Este guia não tem como objetivo explicar tecnicamente como funciona o processo, mas a essência é que o hardware da chave de segurança é utilizado para gerar uma confirmação autenticada de que o usuário legítimo deseja fazer login em um site específico, e não um criado por um impostor. A assinatura digital gerada pelo hardware da chave de segurança funciona como uma segunda senha que permite apenas ao usuário legítimo fazer login, apenas no site legítimo.</p>
+<p>Utilizar abordagens de autenticação de dois fatores no geral não tornam um site à prova de phishing. Os atacantes sempre podem configurar um site falso que encaminha credenciais de um usuário para o site legítimo, força o site legítimo a enviar um código de dois fatores para o usuário como um SMS, e depois solicita que o usuário informe o código de dois fatores no site falso, fornecendo ao atacante ambos fatores necessários para se passar pelo usuário no site legítimo. Porém, fazendo uso de chaves de segurança, como navegador da web verifica o se o nome de domínio do site corresponde ao nome no certificado do site, um atacante precisaria falsificar também o certificado do site falso para enganar a chave de segurança.</p>
+<p>Até o momento, as chaves de segurança oferecem a defesa mais eficaz contra phishing. O Google relatou que, após implantar chaves de segurança no início de 2017 para seus mais de 85 mil funcionários, eles não registraram nenhum ataque de phishing bem-sucedido ou invasão de conta mais de um ano depois. Relatou também, em 2019, que as chaves de segurança eram 100\% eficazes contra bots automatizados, ataques de phishing em massa e ataques direcionados.</p>
+<h2 id="tokens-otp-dedicados">Tokens OTP Dedicados</h2>
+<p>Uma opção para um segundo fator baseado em algo que o usuário tem são tokens OTP (One-Time Password ou Senha de Uso Único), onde, depois que um usuário insere suas credenciais, eles são solicitados a inserir um código gerado por um sistema dedicado. Esse código é unico e válido apenas por um curto período, o que fornece uma camada adicional de segurança.</p>
+<p>Códigos OTP permitem que o cliente prove ao servidor que ele conhece uma chave compartilhada usada para gerar criptograficamente um código OTP. Esse código difere a cada vez, mas é baseado na chave compartilhada. Esse processo fornece uma forma dinâmica e temporária de autenticação, uma vez que o código muda regularmente, tornando mais difícil para os invasores preverem ou reproduzirem o código.</p>
+<p>Para configurar um OTP, o usuário se registra no servidor e um nome de usuário, senha e uma chave compartilhada são acordados. Uma vez registrado, o usuário pode fazer login com os dois fatores. Primeiro, o servidor solicita um nome de usuário e senha, o primeiro fator. O servidor verifica as credenciais, e se forem consideradas autênticas, o servidor verifica então um segundo fator, o código OTP, único a partir do dispositivo que o gerou.</p>
+<h3 id="autenticacao-de-dois-fatores-em-aplicativos-moveis">Autenticação de Dois Fatores em Aplicativos Móveis</h3>
+<p>À medida que dispositivos móveis passaram a poder executar aplicativos de software, é compreensível que aplicações que aproveitem do poder computacional desses dispositivos passaram a gerar código OTP. Google Authenticator e Microsoft Authenticator são exemplos de aplicativos autenticadores móveis de dois fatores.</p>
+<p>Alguns aplicativos autenticadores oferecem funcionalidades que permitem aos usuários simplesmente aprovar um login ao receber uma solicitação de autenticação via push no celular. Internamente, esses aplicativos fornecem o código de autenticação ao servidor sem a interação direta do usuário, tornando o processo de login mais conveniente. No entanto, quando um atacante obtém acesso às credenciais de um usuário, eles podem persuadir esse usuário a clicar em "aprovar", mesmo quando o usuário não está fazendo login, dando ao atacante acesso à conta. Usuários muitas vezes clicam rapidamente em qualquer coisa que atrapalhe o uso de seus celulares.</p>
+<p>Portanto, em ambientes sensíveis, pode valer a pena exigir que os funcionários digitem os códigos dos aplicativos autenticadores, ao invés de simplesmente clicar para aprovar um login.</p>
+<h3 id="otp-baseado-em-sms">OTP Baseado em SMS</h3>
+<p>Em casos em que o usuário não tem um aplicativo autenticador em seu celular, um servidor pode enviar o código de dois fatores para o celular do usuário via SMS (Short Message Service, ou Serviço de Mensagens Curtas).</p>
+<p>Um ponto negativo é que o SMS não é criptografado e pode ser suscetível a ataques man-in-the-middle, onde um terceiro captura dados que em tráfego. Por exemplo, se um usuário possui um malware em seu celular que pode ler todas suas mensagens SMS e consequentemente, todos os códigos de dois fatores enviados por esse método.</p>
+<h3 id="otp-baseado-em-e-mail">OTP Baseado em E-mail</h3>
+<p>Outro método de autenticação de dois fatores para fazer login em um site sensível ou corporativo é enviar o código de segundo fator para o e-mail do usuário ao invés do SMS. Se o usuário puder comprovar que pode fazer login em seu e-mail registrado e acessar o código OTP enviado para o e-mail, será permitido fazer o login. Entretanto, se um atacante conseguir comprometer o e-mail do usuário, o atacante também poderá roubar os códigos de dois fatores enviados para o e-mail.</p>
+<h2 id="autenticacao-de-multiplos-fatores">Autenticação de Múltiplos Fatores</h2>
+<p>A autenticação de múltiplos fatores se refere ao uso de mais de um fator para autenticação. A autenticação de dois fatores é uma forma de autenticação de múltiplos fatores, porém, mais do que apenas dois fatores podem ser utilizados na autenticação de múltiplos fatores.</p>
+<p>Outros fatores que podem ser utilizados ao realizar uma autenticação são:</p>
+<ul>
+<li>Tipo de dispositivo e características de configuração do dispositivo;</li>
+<li>Localização do usuário;</li>
+<li>Comportamento do usuário em aplicativos (por exemplo, com que frequência o usuário acessa um aplicativo);</li>
+<li>Características do usuário (por exemplo, padrões de digitação);</li>
+<li>Impressão digital (TouchID);</li>
+<li>Reconhecimento facial (FaceID).</li>
+</ul>
+<p>Dessa forma, mesmo que um atacante consiga roubar as credenciais de um usuário, e também consiga comprometer um código OTP de segundo fator, é possível acreditar que um ou mais fatores adicionais (como os mencionados acima) revelem que na verdade é um invasor tentando fazer login. Por exemplo, se o atacante não usar o mesmo tipo de celular que o usuário legítimo, então, ao incorporar características sobre o dispositivo como parte da verificação de autenticação, a tentativa de login pode ser bloqueada.</p>
+<h2 id="proteger-os-dominios-com-spf-dkim-e-dmarc">Proteger os Domínios com SPF, DKIM e DMARC</h2>
+<p>Quando bancos começaram a oferecer serviços aos consumidores online, alguns dos ataques de -phishing mais populares envolviam o envio de e-mails que se faziam passar pelo banco para os consumidores, solicitando que clicasse em um link no e-mail para fazer login no site do banco. O e-mail poderia ser enviado a partir do domínio do banco no campo "De:" do e-mail (por exemplo, "De: Suporte ao Cliente&lt;suporte@banco.com>"), pois o remetente não é autenticado como parte do SMTP. Usuários que recebem esses e-mails de -phishing tendem a acreditar que um e-mail está realmente sendo enviado pelo banco quando o domínio pode ser facilmente falsificado.</p>
+<p>Existem alguns protocolos que dificultam a falsificação de e-mails de organizações. Para evitar que um golpista envie um e-mail ilegítimo se passando por uma organização, é possível utilizar os padrões SPF, DKIM e DMARC.</p>
+<p>O SPF (Sender Policy Framework) permite que organizações especifiquem quais endereços de IP estão autorizados a enviar e-mails em nome da organização. A lista de IPs autorizados pode ser adicionada aos registros DNS da organização. Os registros DNS são normalmente usados para traduzir nomes de domínio em endereços IP quando um cliente deseja se conectar a um servidor.</p>
+<p>Com o SPF, quando um programa de e-mails recebe uma mensagem, ele pode procurar qual é o endereço IP autorizado correspondente ao domínio do remetente e verificar se o IP real de onde a mensagem foi enviado é o mesmo que o IP listado em seu registro DNS. Se for, o e-mail é considerado válido. Caso contrário, o e-mail é rotulado como spam ou é excluído. O DMARC (Domain-based Message
+Authentication, Reporting, and Conformance, ou Mensagem Baseada em Domínio de Autenticação, Relatório e Conformidade) pode ser utilizado para especificar o que um programa de e-mail deve fazer se o endereço IP não corresponder.</p>
+<p>Ao invés de apenas autenticar e-mail com base no endereço IP, o protocolo DKIM (DomainKeys Identified Mail) pode ser usado para assinar digitalmente todas as mensagens legítimas originadas de uma organização, utilizando criptografia de chaves públicas e privadas para assinar as mensagens . Os e-mails são assinados usando uma chave provida conhecida apenas pela organização. A chave pública correspondente é publicada nos registros DNS da organização, e os programas de e-mail podem verificar as assinaturas digitais em e-mails assinados com DKIM usando a chave pública.</p>
+<h2 id="dominios-parecidos">Domínios Parecidos</h2>
+<p>Atacantes podem forjar e-mails de domínios semelhantes. Por exemplo, utilizar "site5eguro.com" ao invés de "siteseguro.com".</p>
+<p>Para criar o e-mail de phishing mais convincente possível, pode-se imaginar que um atacante deseje que esse e-mail pareça ser de "siteseguro.com". No entando, se SPF, DKIM e DMARC forem utilizados, um atacante pode ter que recorrer ao uso de um domínio semelhante, como "site5eguro.com" a ponto da diferença não ser percebida rapidamente. Além disso, os atacantes podem aproveitar vários conjuntos de caracteres internacionais para registrar domínios parecidos que tenham caracteres extremamente similares aos caracteres do idioma correspondente, tornando a diferença ainda menos perceptível. Por fim, um atacante pode até criar registros SPF, DKIM e DMARC para os domínios semelhantes a fim de aumentar a legitimidade de seus e-mails de ataque.</p>
+<p>Além de proteger seus domínios legítimos contra falsificações, é importante também registrar proativamente o maior número possível de domínios semelhantes e erros ortográficos dos domínios de sua organização. Também é uma boa prática monitorar se e quando atacantes registram domínios semelhantes aos da organização. Como pode haver um número infinito de variações, dados os muitos conjuntos de caracteres internacionais, serviços de monitoramento de marca e domínio podem ser usados para ajudar na detecção de registros de domínios maliciosos.</p>
+<p>Uma última dica é ajudar os funcionários a identificar quando os e-mails não são enviados por partes internas legítimas, marcando o e-mails como "externos", inserindo marcações como "[EXTERNO]" na linha de assunto do e-mail. Essas marcações podem ser implementadas identificando mensagens que não tenham uma assinatura DKIM válida pela própria organização como externas.</p>
+<h2 id="preenchimento-de-credenciais-e-controle-de-conta">Preenchimento de Credenciais e Controle de Conta</h2>
+<p>Sendo o objetivo de um atacante adquirir credenciais válidas usuários, uma vez obtidas essas informações, eles podem tentar assumir a conta do usuário. Atacantes podem também comprar grandes quantidades de credenciais na {dark web. Mesmo que essas credenciais adquiridas não sejam para um site sensível específico, os usuários tendem a reutilizar as mesmas senhas em vários sites, e as senhas roubadas nas várias violações que já ocorreram podem funcionar nesses sites sensíveis.</p>
+<p>Quando os atacantes testam grandes números de credenciais roubadas em sites-alvo, ocorre um ataque chamado "preenchimento de credenciais". Para se proteger desse tipo de ataque é necessário, principalmente, identificar o uso de robôs e verificar o uso por funcionários de senhas roubadas.</p>
+<p>A detecção anti robôs identifica tentativas automatizadas de atacantes de usar credenciais roubadas em um site. Algumas empresas como a Cloudflare oferecem soluções de detecção e mitigação anti robôs que não apenas ajudam a detectar tentativas de ataque de preenchimento de credenciais em um site, como também ajudam a lidar com scrapping e controle de contas, que é quando um ataque de preenchimento de credenciais resulta em um login bem-sucedido.</p>
+<p>Como os funcionários podem reutilizar as mesmas senhas tanto na rede corporativa quanto em contas pessoais online, é importante identificar quando isso acontece e fazer com que alterem as senhas corporativas. Atacantes inevitavelmente testarão credenciais roubadas na rede corporativa. Tudo que um atacante precisa é encontrar um funcionário que tenha reutilizado tal senha para assumir uma conta na rede corporativa, obter acesso ao e-mail corporativo e depois tentar expandir sua presença na rede usando o conteúdo disponível na caixa de entrada do funcionário comprometido.</p>
+<p>Para identificar casos de reutilização de senha, é necessário verificar todas as senhas dos funcionários em dumps de senha da dark web. Alguns serviços online podem ajudar nessa tarefa. É importante também que em cada vez que um funcionário altere sua senha, essa nova senha seja verificada em repositórios de senhas roubadas.</p>
+<h2 id="gerenciadores-de-senhas">Gerenciadores de Senhas</h2>
+<p>Gerenciadores de senhas são aplicativos que funcionários e usuários podem usar para gerar e gerenciar automaticamente senhas fortes e complexas, únicas para cada site que utilizam. Alguns gerenciadores de senhas também tem integração com navegadores, de modo que o gerenciador pode ajudar a verificar se um site é legítimo antes de enviar uma senha para ele. Quando um gerenciador de senhas gera uma senha para um site no momento do registro, ele também pode registrar o domínio do site legítimo. Se posteriormente o usuário clicar em um link para um site impostor, o site impostor não corresponderá ao domínio legítimo, e o gerenciador de senhas pode aconselhar o usuário a não enviar suas credenciais. Como o gerenciador faz essa verificação com técnicas byte a byte, ele não será enganado por domínios parecidos.</p>
+<p>Gerenciadores de senhas exigem o uso consistente por parte dos funcionários para cada site online para funcionar como uma defesa eficaz. Para se defender de um ataque de phishing é necessário acertar todas as vezes. Para um atacante ter sucesso, basta um deslize para se ter um comprometimento inicial.</p>
+<h2 id="defesas-adicionais">Defesas Adicionais</h2>
+<p>Além de defesas e estratégias de mitigação orientadas a tecnologia, existem também defesas e estratégias de mitigação orientadas a processos e pessoas.</p>
+<h3 id="treinamento-e-testes">Treinamento e Testes</h3>
+<p>Um treinamento anti-phishing é um treinamento para funcionários no qual eles são ensinados sobre os sinais comuns a serem observados em e-mails que podem indicar ataques de phishing ou spear phishing. Alguns exemplos desses sinais são domínios desconhecidos ou incorretos usados no remetende ou em links em um e-mail, anexos inesperados ou pedidos que incluem um senso artificial de urgência, como por exemplo, "você precisa responder imediatamente ou sua conta será desativada".</p>
+<p>Esse treinamento geralmente é seguido por testes de phishing enviados pela equipe de segurança da organização. Esses testes são elaborados para parecerem com e-mails de phishing de atacantes, com a exceção de serem inofensivos, e possuirem o objetivo de verificar se os funcionários conseguem evitá-los. Se um funcionário abrir um e-mail de teste de phishing, clicar em um link no e-mail, clicar em um anexo ou inserir suas credenciais em um site impostor vinculado ao e-mail, ocorre um momento de aprendizado em que o funcionário é informado de que caiu em um ataque de phishing de teste. Se o funcionário não cai no ataque, mas ao invés disso relata o e-mail à equipe de segurança da organização, é um sinal de que o trinamento anti-phishing está funcionando, e o funcionário está menos suscetível a um ataque deste tipo.</p>
+<p>Com treinamento suficiente, os funcionários podem se tornar parte da linha de defesa da organização, sendo o último elemento na detecção de ataques de phishing que não foram filtrados da caixa de entrada dos funcionários por meio de outras contramedidas.</p>
+<p>Realizando treinamentos anti-phishing pelo menos uma vez ao ano e enviando testes de phishing periodicamente, deve ser possível medir se os funcionários de uma organização estão realmente se tornando menos suscetíveis a ataques desse tipo ao longo do tempo.</p>
+<h3 id="verificacoes-de-complexidade-de-senha">Verificações de Complexidade de Senha</h3>
+<p>Alguns sistemas exigem que os funcionários ou usuários definam senhas que atendam a um conjunto de restrições de complexidade como número de caracteres, possuir letras e números, letras maiúsculas e minúsculas ou símbolos especiais.</p>
+<p>Essas verificações de complexidade de senha ajudam a evitar que os usuários escolham senhas frequentemente usadas, mas fracas, como "12345678" ou "senha". No entanto, essas verificações de complexidade por si só não são suficientes. Dada a quantidade de combinações que um processador pode tentar em um período relativamente curto, é, de certa forma, fácil realizar ataques de força bruta, onde se descobre a senha apenas por tentar todas as combinações possíveis.</p>
+<p>Entretanto, verificações de complexidade de senha não são recomendadas pelas diretrizes do Instituto Nacional de Padrões e Tecnologia, pois levam a um comportamento de senha inadequado a longo prazo. Além disso, sua eficácia contra a maioria dos ataques sofisticados também é baixa. Caso esse tipo de verificação seja utilizado, o ideal é que seja em conjunto com outras defesas.</p>
+<h3 id="rotacao-de-senhas">Rotação de Senhas</h3>
+<p>Alguns sistemas exigem que os usuários troquem suas senhas periodicamente. Por exemplo, em algumas empresas, os funcionários devem trocar suas senhas a cada 90 dias. Geralmente, os funcionários consideram essas políticas como uma inconveniência, e elas não são muito eficazes, já que os funcionários tendem a escolher senhas semelhantes às anteriores ou simplesmente alternam entre duas ou três senhas apenas. As orientações do Instituto Nacional de Padrões e Tecnologia também desaconselham esse tipo de prática, pois também leva a um comportamento inadequado de senha a longo prazo.</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Rodapé">
+      
+        
+        <a href="../falhasAdministracaoUsoSistemas/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Falhas na Administração e Uso de Sistemas" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              Falhas na Administração e Uso de Sistemas
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../ferramentasTerceiros/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Ferramentas de Terceiros" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              Ferramentas de Terceiros
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Buscar", "search.result.placeholder": "Digite para iniciar a busca", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.term.missing": "Ausente", "select.version.title": "Selecione a vers\u00e3o"}, "search": "../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.960e086b.min.js"></script>
+      
+    
+  </body>
+</html>
